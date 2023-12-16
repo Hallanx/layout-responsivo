@@ -70,6 +70,9 @@ header {
 
 .noticia img {
     max-width: 100%;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .destaque {
@@ -105,12 +108,23 @@ aside .noticia {
 }
 
 @media screen and (max-width: 767px) {
+
+    .destaque .noticia img {
+        display: block;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
     .conteudo {
         display: block;
     }
 
     .container {
         max-width: 90%;
+    }
+
+    .destaque {
+        text-align: center;
     }
 
 
